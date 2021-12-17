@@ -61,7 +61,7 @@ if &background == 'light'
   hi PreProc ctermfg=64 guifg=#668e3d
   hi Question ctermfg=64 guifg=#668e3d
   hi QuickFixLine ctermbg=251 ctermfg=237 guibg=#c9cdd7 guifg=#33374c
-  hi Search ctermbg=180 ctermfg=94 guibg=#eac6ad guifg=#85512c
+  hi Search ctermbg=18 ctermfg=123 guibg=#000087 guifg=#87ffff
   hi SignColumn ctermbg=253 ctermfg=248 guibg=#dcdfe7 guifg=#9fa7bd
   hi Special ctermfg=64 guifg=#668e3d
   hi SpecialKey ctermfg=248 guifg=#a5b0d3
@@ -159,7 +159,7 @@ else
   hi Whitespace ctermfg=236 guifg=#242940
   hi Folded ctermbg=235 ctermfg=245 guibg=#1e2132 guifg=#686f9a
   hi FoldColumn ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
-  hi Function ctermfg=110 guifg=#84a0c6
+  hi Function ctermfg=106 guifg=#ffdfaf
   hi Identifier cterm=NONE ctermfg=109 guifg=#89b8c2
   hi Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
   hi Include ctermfg=110 guifg=#84a0c6
@@ -176,7 +176,8 @@ else
   hi PreProc ctermfg=150 guifg=#b4be82
   hi Question ctermfg=150 guifg=#b4be82
   hi QuickFixLine ctermbg=236 ctermfg=252 guibg=#272c42 guifg=#c6c8d1
-  hi Search ctermbg=216 ctermfg=234 guibg=#e4aa80 guifg=#392313
+  " hi Search ctermbg=18 ctermfg=123 guibg=#000087 guifg=#87ffff
+  hi Search ctermbg=88 ctermfg=160 guibg=#5f0000 guifg=#ff0000
   hi SignColumn ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
   hi Special ctermfg=150 guifg=#b4be82
   hi SpecialKey ctermfg=240 guifg=#515e97
@@ -184,13 +185,13 @@ else
   hi SpellCap ctermbg=24 ctermfg=252 gui=undercurl guifg=NONE guisp=#84a0c6
   hi SpellLocal ctermbg=23 ctermfg=252 gui=undercurl guifg=NONE guisp=#89b8c2
   hi SpellRare ctermbg=97 ctermfg=252 gui=undercurl guifg=NONE guisp=#a093c7
-  hi Statement ctermfg=110 gui=NONE guifg=#84a0c6
+  hi Statement ctermfg=110 gui=NONE guifg=#ff8700
   hi StatusLine cterm=reverse ctermbg=234 ctermfg=245 gui=reverse guibg=#17171b guifg=#818596 term=reverse
   hi StatusLineTerm cterm=reverse ctermbg=234 ctermfg=245 gui=reverse guibg=#17171b guifg=#818596 term=reverse
   hi StatusLineNC cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
   hi StatusLineTermNC cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
   hi StorageClass ctermfg=110 guifg=#84a0c6
-  hi String ctermfg=109 guifg=#89b8c2
+  hi String ctermfg=109 guifg=#87af5f
   hi Structure ctermfg=110 guifg=#84a0c6
   hi TabLine cterm=NONE ctermbg=233 ctermfg=238 gui=NONE guibg=#0f1117 guifg=#3e445e
   hi TabLineFill cterm=reverse ctermbg=238 ctermfg=233 gui=reverse guibg=#3e445e guifg=#0f1117
@@ -251,6 +252,10 @@ else
     let g:terminal_ansi_colors = ['#1e2132', '#e27878', '#b4be82', '#e2a478', '#84a0c6', '#a093c7', '#89b8c2', '#c6c8d1', '#6b7089', '#e98989', '#c0ca8e', '#e9b189', '#91acd1', '#ada0d3', '#95c4ce', '#d2d4de']
   endif
 endif
+
+hi BufTabLineCurrent ctermbg=140 ctermfg=234 guibg=#878700 guifg=#161821
+hi BufTabLineActive ctermbg=235 ctermfg=216 guibg=#5f5f5f guifg=#161821
+hi CocFloating ctermbg=235 ctermfg=216 guibg=#5f5f5f guifg=#161821
 
 hi! link TermCursor Cursor
 hi! link ToolbarButton TabLineSel
